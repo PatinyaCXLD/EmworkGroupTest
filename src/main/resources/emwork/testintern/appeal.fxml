@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.controllers.appealController">
+   <children>
+      <TextField fx:id="fullNameTextField" layoutX="179.0" layoutY="61.0" promptText="Full Name" />
+      <Button fx:id="submitButton" layoutX="224.0" layoutY="561.0" mnemonicParsing="false" onAction="#submitButtonHandle" text="Submit" />
+      <TextField fx:id="positionTextField" layoutX="179.0" layoutY="104.0" promptText="Position" />
+      <TextField fx:id="emailTextField" layoutX="179.0" layoutY="147.0" promptText="Email" />
+      <ComboBox fx:id="typeComboBox" layoutX="179.0" layoutY="258.0" prefWidth="150.0" promptText="อื่น ๆ" />
+      <TextArea fx:id="reasonTextArea" layoutX="179.0" layoutY="304.0" prefHeight="161.0" prefWidth="150.0" promptText="Reason" />
+      <Label fx:id="errorLabel" layoutX="152.0" layoutY="23.0" prefHeight="17.0" prefWidth="203.0" text="error" textFill="RED" />
+      <TextField fx:id="phoneTextField" layoutX="180.0" layoutY="194.0" promptText="Phone" />
+      <Label layoutX="105.0" layoutY="65.0" text="ชื่อ - นามสกุล" />
+      <Label layoutX="105.0" layoutY="108.0" text="สังกัด/ตำแหน่ง" />
+      <Label layoutX="104.0" layoutY="151.0" text="อีเมล" />
+      <Label layoutX="104.0" layoutY="198.0" text="เบอร์โทรศัพท์" />
+      <Label layoutX="104.0" layoutY="262.0" text="ประเภทการลา" />
+      <Label layoutX="104.0" layoutY="321.0" text="สาเหตุการลา" />
+      <Label fx:id="nameErrorLabel" layoutX="335.0" layoutY="65.0" text="nameError" textFill="RED" />
+      <Label fx:id="phoneErrorLabel" layoutX="335.0" layoutY="198.0" text="phoneError" textFill="RED" />
+      <Label fx:id="reasonErrorLabel" layoutX="335.0" layoutY="321.0" text="reasonError" textFill="RED" />
+      <DatePicker fx:id="fromDatePicker" layoutX="168.0" layoutY="476.0" />
+      <DatePicker fx:id="toDatePicker" layoutX="168.0" layoutY="509.0" />
+      <Label layoutX="98.0" layoutY="480.0" text="ตั้งแต่วันที่" />
+      <Label layoutX="98.0" layoutY="513.0" text="ถึง" />
+      <Label fx:id="timeErrorLabel" alignment="TOP_LEFT" layoutX="353.0" layoutY="473.0" prefHeight="57.0" prefWidth="97.0" text="timeError" textFill="RED" wrapText="true" />
+      <Button layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+   </children>
+</AnchorPane>

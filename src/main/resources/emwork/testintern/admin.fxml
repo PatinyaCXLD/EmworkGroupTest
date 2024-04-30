@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.controllers.adminController">
+   <children>
+      <ListView fx:id="applicationListView" layoutX="60.0" layoutY="77.0" prefHeight="249.0" prefWidth="381.0" />
+      <Label layoutX="275.0" layoutY="359.0" text="สังกัด/ตำแหน่ง" />
+      <Label layoutX="41.0" layoutY="359.0" text="ชื่อ - นามสกุล" />
+      <Label layoutX="41.0" layoutY="392.0" text="อีเมล" />
+      <Label layoutX="275.0" layoutY="392.0" text="เบอร์โทรศัพท์" />
+      <Label layoutX="41.0" layoutY="425.0" text="ประเภทการลา" />
+      <Label layoutX="42.0" layoutY="460.0" text="สาเหตุการลา" />
+      <Label layoutX="275.0" layoutY="425.0" text="ตั้งแต่วันที่" />
+      <Label layoutX="275.0" layoutY="460.0" text="ถึง" />
+      <TextField fx:id="fullNameTextField" editable="false" layoutX="113.0" layoutY="355.0" prefHeight="17.0" prefWidth="140.0" />
+      <TextField fx:id="emailTextField" editable="false" layoutX="113.0" layoutY="388.0" prefHeight="17.0" prefWidth="140.0" />
+      <TextField fx:id="typeTextField" editable="false" layoutX="113.0" layoutY="421.0" prefHeight="17.0" prefWidth="140.0" />
+      <TextField fx:id="positionTextField" editable="false" layoutX="349.0" layoutY="355.0" prefHeight="25.0" prefWidth="111.0" />
+      <TextField fx:id="phoneTextField" editable="false" layoutX="349.0" layoutY="388.0" prefHeight="25.0" prefWidth="111.0" />
+      <TextField fx:id="fromTextField" editable="false" layoutX="349.0" layoutY="421.0" prefHeight="25.0" prefWidth="111.0" />
+      <TextField fx:id="toTextField" editable="false" layoutX="349.0" layoutY="456.0" prefHeight="25.0" prefWidth="111.0" />
+      <TextArea fx:id="reasonTextArea" editable="false" layoutX="113.0" layoutY="460.0" prefHeight="59.0" prefWidth="140.0" wrapText="true" />
+      <Label layoutX="275.0" layoutY="496.0" text="สถานะ" />
+      <Button layoutX="176.0" layoutY="545.0" mnemonicParsing="false" onAction="#approveButton" text="อนุมัติ" />
+      <Button layoutX="282.0" layoutY="545.0" mnemonicParsing="false" onAction="#declineButton" text="ไม่อนุมัติ" />
+      <TextField fx:id="statusTextField" editable="false" layoutX="349.0" layoutY="492.0" prefHeight="25.0" prefWidth="111.0" />
+      <Button layoutX="15.0" layoutY="21.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+   </children>
+</AnchorPane>
